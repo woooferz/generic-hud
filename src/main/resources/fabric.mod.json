@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "generic-hud",
+	"version": "${version}",
+	"name": "Generic HUD",
+	"description": "This adds various HUD Elements to HUD Lib, such as Ping and Coordinates.",
+	"authors": [
+		"Wooferz"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/generic-hud",
+		"sources": "https://github.com/woooferz/generic-hud"
+	},
+	"license": "MIT",
+	"icon": "assets/generic-hud/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.wooferz.generichud.GenericHUD"
+		],
+		"client": [
+			"dev.wooferz.generichud.GenericHUDClient"
+		]
+	},
+	"mixins": [
+		"generic-hud.mixins.json",
+		{
+			"config": "generic-hud.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"hudlib": ">=1.0.0"
+	}
+}
