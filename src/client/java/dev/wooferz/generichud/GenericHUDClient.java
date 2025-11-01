@@ -1,11 +1,7 @@
 package dev.wooferz.generichud;
 
-import dev.wooferz.generichud.element.ClockHudElement;
-import dev.wooferz.generichud.element.CoordinateElement;
-import dev.wooferz.generichud.element.CpsHudElement;
-import dev.wooferz.generichud.element.PingHudElement;
+import dev.wooferz.generichud.element.*;
 import dev.wooferz.hudlib.HudManager;
-import dev.wooferz.hudlib.hud.HUDElement;
 import net.fabricmc.api.ClientModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +16,7 @@ public class GenericHUDClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
+		HudManager.registerHudElement(new FpsHudElement());
 		HudManager.registerHudElement(new PingHudElement());
 		HudManager.registerHudElement(new ClockHudElement());
 		HudManager.registerHudElement(new CpsHudElement());
