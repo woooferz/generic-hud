@@ -47,8 +47,8 @@ public class ClockHudElement extends BaseTextElement {
         String timeStamp = new SimpleDateFormat(pattern).format(new Date());
         timeStamp.toUpperCase();
 
-        renderText(timeStamp, i, i1, getWidth(), i3, drawContext, v, true);
         renderBox(drawContext, i, i1, getWidth(), i3);
+        renderText(timeStamp, i, i1, getWidth(), i3, drawContext, v, true);
 
     }
 

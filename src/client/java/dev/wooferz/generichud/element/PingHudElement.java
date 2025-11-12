@@ -15,9 +15,8 @@ public class PingHudElement extends BaseTextElement{
 
     @Override
     public void render(int i, int i1, int i2, int i3, DrawContext drawContext, float v) {
-        renderText(String.valueOf(getPing(MinecraftClient.getInstance())) + " ms", i, i1, i2, i3, drawContext, v, true);
         renderBox(drawContext, i, i1, i2, i3);
-
+        renderText(String.valueOf(getPing(MinecraftClient.getInstance())) + " ms", i, i1, i2, i3, drawContext, v, true);
     }
 
     private int getPing(MinecraftClient mc) {

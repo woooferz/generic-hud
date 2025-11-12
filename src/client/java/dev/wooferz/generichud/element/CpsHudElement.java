@@ -17,9 +17,8 @@ public class CpsHudElement extends BaseTextElement{
     @Override
     public void render(int i, int i1, int i2, int i3, DrawContext drawContext, float v) {
 
-
-        renderText(String.valueOf(CpsHelper.getLeftCps()) + " CPS", i, i1, i2, i3, drawContext, v, true);
         renderBox(drawContext, i, i1, i2, i3);
+        renderText(String.valueOf(CpsHelper.getLeftCps()) + " CPS", i, i1, i2, i3, drawContext, v, true);
 
     }
 

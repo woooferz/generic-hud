@@ -21,13 +21,10 @@ public class CoordinateElement extends BaseTextElement{
             return;
         }
 
+        renderBox(drawContext, i, i1, getWidth(), 17 * 3);
         renderText("X: " + String.valueOf((int) player.getX()), i, i1, i2, i3, drawContext, v, false, 5);
         renderText("Y: " + String.valueOf((int) player.getY()), i, i1 + 17, i2, i3, drawContext, v, false, 5);
         renderText("Z: " + String.valueOf((int) player.getZ()), i , i1 + 17 + 17, i2, i3, drawContext, v, false, 5);
-
-
-
-        renderBox(drawContext, i, i1, getWidth(), 17 * 3);
 
     }
 

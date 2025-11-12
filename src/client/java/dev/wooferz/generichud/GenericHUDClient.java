@@ -18,7 +18,7 @@ public class GenericHUDClient implements ClientModInitializer {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
 		HudManager.registerHudElement(new FpsHudElement());
 		HudManager.registerHudElement(new PingHudElement());
-		HudManager.registerHudElement(new ClockHudElement());
+		//HudManager.registerHudElement(new ClockHudElement());
 		HudManager.registerHudElement(new CpsHudElement());
 		HudManager.registerHudElement(new CoordinateElement());
 	}
